@@ -11,11 +11,16 @@ namespace n01625423_assignment_1.Controllers
     {
         // GET: NumberMachine
 
-        // Example5 - Create a method which has an input {id}, and applies four mathematical operations to it.
+        /// <summary>
+        /// Example5 - Create a method which has an input {id}, and applies four mathematical operations to it.
+        /// </summary>
+        /// <param name="id">Here we take any number as input, such as 10,-5,30</param>
+        /// <returns>
+        /// GET api/NumberMachine/10 -> ?
+        /// GET api/NumberMachine/-5 -> ?
+        /// GET api/NumberMachine/30 -> ?
+        /// </returns>
 
-        // GET api/NumberMachine/10 -> ?
-        // GET api/NumberMachine/-5 -> ?
-        // GET api/NumberMachine/30 -> ?
         public string Get(int id)
         {
             int summation = 5 + id;

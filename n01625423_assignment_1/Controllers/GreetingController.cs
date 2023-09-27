@@ -11,24 +11,32 @@ namespace n01625423_assignment_1.Controllers
     {
         // POST: Greeting
 
-        // Example3 - Returns the string “Hello World!”
-
-        // POST api/Greeting -> "Hello World!"
+        /// <summary>
+        /// Example3 - Returns the string “Hello World!”
+        /// </summary
+        /// <returns>
+        /// POST api/Greeting -> "Hello World!"
+        /// output in command prompt screenshot -> https://prnt.sc/8G53bUKTZKIB
+        /// </returns>
 
         public string Post()
         { 
             return "Hello World!"; // API Returns Final Output in String "Hello World!"
         }
 
-        // output in command prompt screenshot -> https://prnt.sc/8G53bUKTZKIB
 
         // GET: Greeting
 
-        // Example4 - Returns the string “Greetings to {id} people!” where id is an integer value.
+        /// <summary>
+        /// Example4 - Returns the string “Greetings to {id} people!” where id is an integer value.
+        /// </summary>
+        /// <param name="id"> Here we passed number as input for example: 3,6,0</param>
+        /// <returns>
+        /// GET api/Greeting/3 -> Greetings to 3 people
+        /// GET api/Greeting/6 -> Greetings to 6 people
+        /// GET api/Greeting/0 -> Greetings to 0 people
+        /// </returns>
 
-        // GET api/Greeting/3 -> Greetings to 3 people
-        // GET api/Greeting/6 -> Greetings to 6 people
-        // GET api/Greeting/0 -> Greetings to 0 people
         public string Get(int id)
         {
             string greetingMessage = "Greetings to " + id + " people!";

@@ -13,7 +13,19 @@ namespace n01625423_assignment_1.Controllers
     {
         // GET: HostingCost
 
-        // Example 6: You are charging your client $5.50 / FN (fortnight = 14 days) for web hosting and maintenance, plus an additional 13% HST.The input { id } represents the number of days which has elapsed since the beginning of the hosting.Output 3 strings which describe the total hosting cost.
+        /// <summary>
+        /// Example 6: You are charging your client $5.50 / FN (fortnight = 14 days) for web hosting and maintenance, plus an additional 13% HST.The input { id } represents the number of days which has elapsed since the beginning of the hosting.Output 3 strings which describe the total hosting cost.
+        /// </summary>
+        /// <param name="id"> we take input id, which represents number of days such as 0,14 </param>
+        /// <returns>
+        ///     Output will be
+        ///     1. “1 fortnights at $5.50/FN = $5.50 CAD”
+        ///        “HST 13% = $0.72 CAD”
+        ///        “Total = $6.22 CAD”
+        ///     2.  “2 fortnights at $5.50/FN = $11.00 CAD”
+        ///        “HST 13% = $1.43 CAD”
+        ///        “Total = $12.43 CAD”
+        /// </returns>
 
         public string[] Get(int id)
         {
