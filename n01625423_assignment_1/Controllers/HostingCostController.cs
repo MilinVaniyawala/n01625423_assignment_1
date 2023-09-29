@@ -50,13 +50,13 @@ namespace n01625423_assignment_1.Controllers
             double finalAmt = costPerFortNights + taxCalOfHST;
 
             // 1. String Output - $x fortnights at $5.50/FN = $y CAD
-            string costPerFortNight = countFN + " fortnights at $5.50/FN = $" + costPerFortNights + " CAD";
+            string costPerFortNight = countFN + " fortnights at $5.50/FN = $" + Math.Round(costPerFortNights, 2)  + " CAD";
 
             // 2. String Output - HST 13% = $z CAD
-            string taxFinal = "HST 13% = $" + taxCalOfHST + " CAD";
+            string taxFinal = "HST 13% = $" + Math.Round(taxCalOfHST, 2)  + " CAD";
 
             // 3. String Output - Total = $6.22 CAD
-            string totalAmt = "Total = $" + finalAmt + " CAD";
+            string totalAmt = "Total = $" +  Math.Round(finalAmt, 2) + " CAD";
 
 
             return new string[] { costPerFortNight, taxFinal, totalAmt };
